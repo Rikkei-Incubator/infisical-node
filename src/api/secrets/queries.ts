@@ -13,7 +13,7 @@ export const getSecrets = async (apiRequest: AxiosInstance, options: GetSecretsD
         '/api/v3/secrets', {
         params: {
             workspaceId: options.workspaceId,
-            environment: options.environment
+            environment: options.environment,
         }
     });
 
@@ -26,7 +26,8 @@ export const getSecret = async (apiRequest: AxiosInstance, options: GetSecretDTO
         params: {
             workspaceId: options.workspaceId,
             environment: options.environment,
-            type: options.type
+            type: options.type,
+            secretPath: options.secretPath,
         }
     });
 
