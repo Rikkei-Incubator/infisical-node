@@ -15,6 +15,7 @@ export interface GetSecretDTO {
     workspaceId: string;
     environment: string;
     type: 'shared' | 'personal';
+    secretPath?: string;
 }
 
 export interface CreateSecretDTO {
